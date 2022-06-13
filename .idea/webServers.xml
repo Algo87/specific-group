@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="de732a42-51f5-4b1c-8bcd-68d4925c661d" name="admin@icontext.by" url="http://vh92.hoster.by">
+        <fileTransfer host="vh92.hoster.by" port="21">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+      <webServer id="15833c2d-5c4a-4067-b475-e8d50f036f97" name="sftp://atmosfera.by">
+        <fileTransfer accessType="SFTP" host="atmosfera.by" port="22" sshConfigId="45bafa75-89af-4d4e-b136-99523f43ebe4" sshConfig="atmosfer@atmosfera.by:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

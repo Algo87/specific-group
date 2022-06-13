@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<style>
+    .photo-block{
+        display: flex;
+        align-items: stretch;
+        max-width: 1200px;
+        margin: 0 auto;
+        flex-grow : 1;
+        font-size: 24px;
+    }
+    .photo-block-text-photo{
+        color: #666666;
+        font-weight: bold;
+        font-family: 'Source Sans Pro',sans-serif;
+        font-style: normal;
+        /*font-size: 24px;*/
+    }
+    .photo-block-text{
+        margin-top: 0;
+        padding: 0 24px;
+    }
+    .photo-block-text,
+    .photo-block-item li,
+    .photo-block-item ul{
+        color: #202020;
+        font-family: 'Source Sans Pro',sans-serif;
+        font-style: normal;
+        text-decoration: none;
+
+    }
+    /*.photo-block-item:first-child{*/
+    .photo-block-item{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        flex-grow: 1;
+        flex-direction: column;
+    }
+
+
+    .photo-block-item li{
+        margin: 16px 24px;
+    }
+    .photo-block-line{
+        width: 50%;
+        border: 0 none;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: rgba(153, 153, 153, 1.0);
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .photo-block-img{
+        width: 300px;
+        height: auto;
+    }
+@media screen and (max-width: 768px){
+    .photo-block-item{
+        width: 100%;
+        min-width: 100%;
+    }
+    .photo-block{
+        flex-wrap: wrap;
+        font-size: 18px;
+        width: 320px;
+
+    }
+    .photo-block-item:last-child{
+        margin-top: 24px;
+    }
+}
+
+</style>
+
+<div class="photo-block">
+    <div class="photo-block-item">
+        <img  class="photo-block-img" src="https://www.specific-group.com/hs-fs/hubfs/Andreas%20Muzik.png?width=200&height=228&name=Andreas%20Muzik.png" />
+        <p class="photo-block-text-photo">Bei uns sind Kollegen "Chef-Sache", deshalb bin ich dein persönlicher Ansprechpartner beim 2. Gespräch.</p>
+    <hr class="photo-block-line"/>
+    </div>
+    <div class="photo-block-item">
+        <p class="photo-block-text">Im ersten Kennenlernen (max. 15min.) sprechen wir über:</p>
+        <ul>
+            <li>Transparente Gehaltsstruktur</li>
+            <li>Ehrliches Feedback innerhalb von 3 Tagen, ob wir einen Match haben</li>
+            <li>Teamsetting</li>
+            <li>What´s unique @ specific group?</li>
+        </ul>
+        <p class="photo-block-text">Gerne via Telefon (06641253001) oder den Videocall link - siehe unten</p>
+        <button>test</button>
+    </div>
+
+</div>
+
+</body>
+</html>
